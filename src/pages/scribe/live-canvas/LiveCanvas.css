@@ -1,0 +1,25 @@
+
+.canvas-wrapper {
+  position: absolute;
+  width: 5000px;
+  height: 5000px;
+  top: -2000px;
+  left: -2000px;
+  transform-origin: center;
+  transition: transform 0.1s ease-out;
+}
+
+.connectors-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4000px;
+  height: 4000px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.dotted-grid {
+  background-image: radial-gradient(#E2E8F0 1px, transparent 1px);
+  background-size: 40px 40px;
+}

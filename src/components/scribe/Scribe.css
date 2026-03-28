@@ -1,0 +1,71 @@
+/* Custom Scrollbar for Scribe Components */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #FFEC5B;
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #EBE04D;
+}
+
+/* Firefox support */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #FFEC5B transparent;
+}
+
+/* Dotted Grid Background */
+.dotted-grid {
+  background-image: radial-gradient(#CBD5E1 1px, transparent 1px) !important;
+  background-size: 24px 24px !important;
+}
+
+/* Participant Card Glow Effects */
+.participant-card.glow-speaking {
+  box-shadow: 0 0 30px rgba(249, 115, 22, 0.7) !important;
+  animation: card-pulse-orange 1.5s infinite ease-in-out;
+  border-color: #F97316 !important;
+}
+
+.participant-card.glow-active {
+  box-shadow: 0 0 20px rgba(255, 236, 91, 0.5) !important;
+  border-color: #FFEC5B !important;
+}
+
+.participant-card.glow-hidden {
+  opacity: 0.7;
+  filter: none;
+  box-shadow: none !important;
+}
+
+@keyframes card-pulse-orange {
+  0% { 
+    box-shadow: 0 0 15px rgba(249, 115, 22, 0.3);
+  }
+  50% { 
+    box-shadow: 0 0 45px rgba(249, 115, 22, 0.8);
+  }
+  100% { 
+    box-shadow: 0 0 15px rgba(249, 115, 22, 0.3);
+  }
+}
+
+/* Sticky Note Glow Effects */
+.sticky-note {
+  border-radius: 2px !important;
+  overflow: visible !important;
+}
+
+.sticky-note.glow-note {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 0 15px rgba(255, 236, 91, 0.2) !important;
+  border: 1px solid rgba(0, 0, 0, 0.03) !important;
+}
+
+.sticky-note:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12), 0 0 20px rgba(255, 236, 91, 0.4) !important;
+}
